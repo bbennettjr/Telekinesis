@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		1829E59A1C29741900A84650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E5991C29741900A84650 /* main.m */; };
-		1829E59D1C29741900A84650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E59C1C29741900A84650 /* AppDelegate.m */; };
-		1829E5A01C29741900A84650 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E59F1C29741900A84650 /* ViewController.m */; };
 		1829E5A31C29741900A84650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1829E5A11C29741900A84650 /* Main.storyboard */; };
 		1829E5A51C29741900A84650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1829E5A41C29741900A84650 /* Assets.xcassets */; };
 		1829E5A81C29741900A84650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1829E5A61C29741900A84650 /* LaunchScreen.storyboard */; };
 		1829E5B31C29741900A84650 /* TelekinesisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E5B21C29741900A84650 /* TelekinesisTests.m */; };
 		1829E5BE1C29741900A84650 /* TelekinesisUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E5BD1C29741900A84650 /* TelekinesisUITests.m */; };
+		1829E5CD1C29796F00A84650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E5CC1C29796F00A84650 /* AppDelegate.m */; };
+		1829E5D01C297D0000A84650 /* TelekinesisStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E5CF1C297D0000A84650 /* TelekinesisStartViewController.m */; };
+		1829E5D41C297FAB00A84650 /* TelekinesisActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E5D31C297FAB00A84650 /* TelekinesisActionViewController.m */; };
+		1829E5D81C29A5F900A84650 /* PaperBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E5D71C29A5F900A84650 /* PaperBackground.m */; };
+		1829E5DB1C29B3CC00A84650 /* CenterObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E5DA1C29B3CC00A84650 /* CenterObject.m */; };
+		1829E5DE1C29E46700A84650 /* TelekinesisActionPaperBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E5DD1C29E46700A84650 /* TelekinesisActionPaperBackground.m */; };
+		1829E5E21C3393F300A84650 /* TelekinesisModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E5E11C3393F300A84650 /* TelekinesisModel.m */; };
+		1829E5E51C3A124200A84650 /* ObjectPositionAndColorData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829E5E41C3A124200A84650 /* ObjectPositionAndColorData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +43,6 @@
 /* Begin PBXFileReference section */
 		1829E5951C29741900A84650 /* Telekinesis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telekinesis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1829E5991C29741900A84650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1829E59B1C29741900A84650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1829E59C1C29741900A84650 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1829E59E1C29741900A84650 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1829E59F1C29741900A84650 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1829E5A21C29741900A84650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1829E5A41C29741900A84650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1829E5A71C29741900A84650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,22 @@
 		1829E5B91C29741900A84650 /* TelekinesisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelekinesisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1829E5BD1C29741900A84650 /* TelekinesisUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TelekinesisUITests.m; sourceTree = "<group>"; };
 		1829E5BF1C29741900A84650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1829E5CB1C29796F00A84650 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1829E5CC1C29796F00A84650 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1829E5CE1C297D0000A84650 /* TelekinesisStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelekinesisStartViewController.h; sourceTree = "<group>"; };
+		1829E5CF1C297D0000A84650 /* TelekinesisStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelekinesisStartViewController.m; sourceTree = "<group>"; };
+		1829E5D21C297FAB00A84650 /* TelekinesisActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelekinesisActionViewController.h; sourceTree = "<group>"; };
+		1829E5D31C297FAB00A84650 /* TelekinesisActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelekinesisActionViewController.m; sourceTree = "<group>"; };
+		1829E5D61C29A5F900A84650 /* PaperBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperBackground.h; sourceTree = "<group>"; };
+		1829E5D71C29A5F900A84650 /* PaperBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperBackground.m; sourceTree = "<group>"; };
+		1829E5D91C29B3CC00A84650 /* CenterObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterObject.h; sourceTree = "<group>"; };
+		1829E5DA1C29B3CC00A84650 /* CenterObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterObject.m; sourceTree = "<group>"; };
+		1829E5DC1C29E46700A84650 /* TelekinesisActionPaperBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelekinesisActionPaperBackground.h; sourceTree = "<group>"; };
+		1829E5DD1C29E46700A84650 /* TelekinesisActionPaperBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelekinesisActionPaperBackground.m; sourceTree = "<group>"; };
+		1829E5E01C3393F300A84650 /* TelekinesisModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelekinesisModel.h; sourceTree = "<group>"; };
+		1829E5E11C3393F300A84650 /* TelekinesisModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelekinesisModel.m; sourceTree = "<group>"; };
+		1829E5E31C3A124200A84650 /* ObjectPositionAndColorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectPositionAndColorData.h; sourceTree = "<group>"; };
+		1829E5E41C3A124200A84650 /* ObjectPositionAndColorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectPositionAndColorData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +119,12 @@
 		1829E5971C29741900A84650 /* Telekinesis */ = {
 			isa = PBXGroup;
 			children = (
-				1829E59B1C29741900A84650 /* AppDelegate.h */,
-				1829E59C1C29741900A84650 /* AppDelegate.m */,
-				1829E59E1C29741900A84650 /* ViewController.h */,
-				1829E59F1C29741900A84650 /* ViewController.m */,
+				1829E5CB1C29796F00A84650 /* AppDelegate.h */,
+				1829E5CC1C29796F00A84650 /* AppDelegate.m */,
 				1829E5A11C29741900A84650 /* Main.storyboard */,
-				1829E5A41C29741900A84650 /* Assets.xcassets */,
-				1829E5A61C29741900A84650 /* LaunchScreen.storyboard */,
-				1829E5A91C29741900A84650 /* Info.plist */,
+				1829E5DF1C338CFA00A84650 /* Model */,
+				1829E5D11C297F1F00A84650 /* ViewControllers */,
+				1829E5D51C29A5C800A84650 /* Views */,
 				1829E5981C29741900A84650 /* Supporting Files */,
 			);
 			path = Telekinesis;
@@ -117,6 +133,9 @@
 		1829E5981C29741900A84650 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1829E5A41C29741900A84650 /* Assets.xcassets */,
+				1829E5A61C29741900A84650 /* LaunchScreen.storyboard */,
+				1829E5A91C29741900A84650 /* Info.plist */,
 				1829E5991C29741900A84650 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +157,41 @@
 				1829E5BF1C29741900A84650 /* Info.plist */,
 			);
 			path = TelekinesisUITests;
+			sourceTree = "<group>";
+		};
+		1829E5D11C297F1F00A84650 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1829E5CE1C297D0000A84650 /* TelekinesisStartViewController.h */,
+				1829E5CF1C297D0000A84650 /* TelekinesisStartViewController.m */,
+				1829E5D21C297FAB00A84650 /* TelekinesisActionViewController.h */,
+				1829E5D31C297FAB00A84650 /* TelekinesisActionViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1829E5D51C29A5C800A84650 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1829E5D61C29A5F900A84650 /* PaperBackground.h */,
+				1829E5D71C29A5F900A84650 /* PaperBackground.m */,
+				1829E5DC1C29E46700A84650 /* TelekinesisActionPaperBackground.h */,
+				1829E5DD1C29E46700A84650 /* TelekinesisActionPaperBackground.m */,
+				1829E5D91C29B3CC00A84650 /* CenterObject.h */,
+				1829E5DA1C29B3CC00A84650 /* CenterObject.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1829E5DF1C338CFA00A84650 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1829E5E01C3393F300A84650 /* TelekinesisModel.h */,
+				1829E5E11C3393F300A84650 /* TelekinesisModel.m */,
+				1829E5E31C3A124200A84650 /* ObjectPositionAndColorData.h */,
+				1829E5E41C3A124200A84650 /* ObjectPositionAndColorData.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +327,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1829E5A01C29741900A84650 /* ViewController.m in Sources */,
-				1829E59D1C29741900A84650 /* AppDelegate.m in Sources */,
+				1829E5E51C3A124200A84650 /* ObjectPositionAndColorData.m in Sources */,
+				1829E5DE1C29E46700A84650 /* TelekinesisActionPaperBackground.m in Sources */,
+				1829E5CD1C29796F00A84650 /* AppDelegate.m in Sources */,
+				1829E5DB1C29B3CC00A84650 /* CenterObject.m in Sources */,
 				1829E59A1C29741900A84650 /* main.m in Sources */,
+				1829E5D01C297D0000A84650 /* TelekinesisStartViewController.m in Sources */,
+				1829E5D81C29A5F900A84650 /* PaperBackground.m in Sources */,
+				1829E5E21C3393F300A84650 /* TelekinesisModel.m in Sources */,
+				1829E5D41C297FAB00A84650 /* TelekinesisActionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
