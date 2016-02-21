@@ -69,7 +69,7 @@ static NSString *const BLUE_KEY = @"BLUE_KEY";
 }
 
 #pragma mark - Class Methods
-    //Return all keys to the user
+    //Return all keys to the user.
 +(NSArray *)allKeys{
     return @[X_POSITION_KEY, Y_POSITION_KEY, RED_KEY, GREEN_KEY, BLUE_KEY];
 }
