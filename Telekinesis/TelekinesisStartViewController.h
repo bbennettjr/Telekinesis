@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TelekinesisStartViewController : UIViewController
-
+    //This VC is the starting VC for the program currently. 
 @end
