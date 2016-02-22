@@ -14,6 +14,7 @@
 #import "TelekinesisActionPaperBackground.h"
 
 @interface TelekinesisActionViewController ()
+    //properties used include our custom views (CenterObject, TelekinesisActionPaperBackground) as well as an NSTimer to continually call the randomization model
 @property (nonatomic, strong) CenterObject *telekinesisObject;
 @property (nonatomic, strong) ObjectPositionAndColorData *objectData;
 @property (nonatomic, strong) NSTimer *timer;
@@ -24,13 +25,15 @@
 @implementation TelekinesisActionViewController
 
 #pragma mark - ViewController life cycle
+
+    //Set up the timer when the view loads
 #define TIMER_INTERVAL 0.5
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //Do any additional setup after loading the view.
     [self.telekinesisObject setStartColor:self.startColor];
 
-        //start the timer
+        //Start the timer and assign the method updateUI: to its firing protocol
     self.timer = [NSTimer scheduledTimerWithTimeInterval:TIMER_INTERVAL
                                                   target:self
                                                 selector:@selector(updateUI:)
@@ -50,18 +53,22 @@
 }
 
 -(ObjectPositionAndColorData *)objectData{
+        //Procede if the objectData does not exist
     if (!_objectData) {
         CGFloat red, green, blue, alpha;
-            //Call
+
+            //Get the current RBG values of the startColor and place them into the current ObjectPositionAndColorData schema
         [self.startColor getRed: &red
                           green: &green
                            blue: &blue
                           alpha: &alpha];
+            //Log the values to the debugger
         NSLog(@"red = %f. Green = %f. Blue = %f. Alpha = %f",
               red,
               green,
               blue,
               alpha);
+            //Initialize it to the stack
         _objectData = [[ObjectPositionAndColorData alloc] initWithPositionsX:self.telekinesisObject.center.x
                                                                         andY:self.telekinesisObject.center.y
                                                                 andColorsRed:red
@@ -92,13 +99,13 @@
 
 #pragma mark - UI
 -(void)updateUI:(NSTimer *)timer{
-        //continually update the UI
+        //Continually update the UI when the timer fires
     self.objectData = [self.model newRandomDataUsingCurrentObjectData:self.objectData];
     [self setObjectColorAndPosition];
 }
 
 -(void)setObjectColorAndPosition{
-        //use the new object data information to store the new position and color
+        //Use the new object data information to store the new position and color
         //Color update
     [self.telekinesisObject setStartColor:[UIColor colorWithRed:[self.objectData.red floatValue] green:[self.objectData.green floatValue] blue:[self.objectData.blue floatValue] alpha:1.0]];
         //X position update
