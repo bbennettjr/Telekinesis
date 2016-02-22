@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+    //This class creates the background tileset with a light grey, paper like feel.  
 @interface PaperBackground : UIView
 
 @end

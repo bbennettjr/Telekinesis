@@ -11,6 +11,7 @@
 @implementation PaperBackground
 
 #pragma mark - Scaling
+    //Scaling of the corners to fit different devices
 #define CORNER_SCALE_FACTOR 180.0
 #define CORNER_RADIUS 4.0
 #define CORNER_OFFSET 3.0
