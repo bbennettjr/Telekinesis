@@ -8,6 +8,7 @@
 
 #import "PaperBackground.h"
 
+    //Subclass of PaperBackground that adds dividing lines on the screen to visualize quadrants
 @interface TelekinesisActionPaperBackground : PaperBackground
 
 @end
